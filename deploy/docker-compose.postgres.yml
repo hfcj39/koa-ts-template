@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+    teaching-pgsql:
+        image: postgres:14
+        container_name: keqing-pgsql
+        restart: always
+        ports: 
+            - "0.0.0.0:5432:5432"
+        volumes: 
+            - ./data/postgres:/var/lib/postgresql/data
+        environment: 
+            - POSTGRES_DB=keqing
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=hello123

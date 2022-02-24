@@ -1,0 +1,1 @@
+export {default as helloworld} from "./helloworld/helloworld.controller"
